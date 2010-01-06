@@ -1,0 +1,17 @@
+#INSTRUCTION
+
+to use :
+
+1. just import pnamran.sql into your mysql database.
+
+2. edit the docroot/inc/db_config.php to reflect your database environment.
+
+3. upload/put the whole file inside docroot into your webserver directory .
+
+4. to create page. use phpmyadmin or anything .. insert "pages" tables.
+  - to use .. access to http://<yourwebserver>/<page_name>.<html|php>
+5. to add image. use phpmyadmin or anything to insert data into "images" tables.
+  - to use image.. access to http://<yourwebserver>/i/<image_name>.<jpg|png>
+
+then it should be fine.
+~                       
