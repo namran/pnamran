@@ -1,0 +1,34 @@
+# BEGIN Pnamran Image folder redirect request
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /i/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*\.(jpg|png|gif))$ /i.php?file=$1 [L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /i/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !^(.*\.(jpg|png))$ /index.php?file=$1 [L]
+</IfModule>
+# END Pnamran Image folder
+# BEGIN ETag
+Header unset ETag
+FileETag None
+# END ETag
+#Add Expiry header with .htaccess
+# BEGIN Header expiry
+<FilesMatch "\.(flv|gif|jpg|jpeg|png|ico)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+<FilesMatch "\.(js|css|pdf|swf)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+# END Header expiry
+#<ifModule mod_rewrite.c>
+#RewriteEngine on
+#RewriteRule ^(.*\.(js|css))$ jsmart/index.php?$1
+#</ifModule>
