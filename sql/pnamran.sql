@@ -50,3 +50,12 @@ CREATE TABLE IF NOT EXISTS `pages` (
   KEY `id` (`id`),
   FULLTEXT KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pages`
+--
+
+INSERT INTO `pages` (`id`, `name`, `description`, `detail`, `last_updated`) VALUES
+(1, 'home.html', 'This is a home', '<center>\r\n<p>\r\nWelcome to Project at namran.net.\r\n\r\n<i>\r\<br> this going to be interesting...\r\n</i>\r\n<br>\r\n<b>still on "Manual updating," hit F5! </b>\r\n<br>\r\n<p>\r\n\r\n<img src="/i/invitation_front1.jpg">\r\n</center></html>', '2010-01-06 20:33:05');
+
+
