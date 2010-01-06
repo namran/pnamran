@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>namran/pnamran @ GitHub</title>
+	
+	<style type="text/css">
+		body {
+  		margin-top: 1.0em;
+  		background-color: #72b4c3;
+		  font-family: "Helvetica,Arial,FreeSans"; 
+  		color: #000000;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+		h1 { font-size: 3.8em; color: #8d4b3c; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #8d4b3c; }
+    h3 { text-align: center; color: #8d4b3c; }
+    a { color: #8d4b3c; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+		pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+	</style>
+	
+</head>
+
+<body>
+  <a href="http://github.com/namran/pnamran"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  
+  <div id="container">
+
+    <div class="download">
+      <a href="http://github.com/namran/pnamran/zipball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/namran/pnamran/tarball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
+      
+    <h1><a href="http://github.com/namran/pnamran">pnamran</a> 
+      <span class="small">by <a href="http://github.com/namran">namran</a></span></h1>
+
+    <div class="description">
+      simplify web app to store data into mysql but use combination of php and .htaccess to make it appear like static content
+    </div>
+
+    <p>.. this is meant to save some space by dumping all html code..
+
+image file into mysql database instead of real file..
+
+as on some hosting.. the mysql database usages somehow
+unlimited .. while the real file got limited quota.
+
+I am doing this because..
+my file space at my current hosting plan .. is almost full..
+reaching above 90% limit..
+
+hence my blog update have been slowed down..
+too reluctant  to upload more photos / screenshot...</p><h2>Dependencies</h2>
+<p>imagemagick , a httpd webserver which can understand .htaccess , php interpreter perhaps..
+
+YOU!!</p>
+<h2>Install</h2>
+<p>to use :
+
+1. just import pnamran.sql into your mysql database.
+
+2. edit the docroot/inc/db_config.php to reflect your database environment.
+
+3. upload/put the whole file inside docroot into your webserver directory .
+
+4. to create page. use phpmyadmin or anything .. insert "pages" tables.
+  - to use .. access to http://<yourwebserver>/<page_name>.<html|php>
+5. to add image. use phpmyadmin or anything to insert data into "images" tables.
+  - to use image.. access to http://<yourwebserver>/i/<image_name>.<jpg|png>
+
+then it should be fine.
+~                       </p>
+<h2>License</h2>
+<p>Creative common. free to be distributed/changed and whatsoever..</p>
+<h2>Authors</h2>
+<p>Namran Hussin (namran@namran.net)<br/><br/>      </p>
+<h2>Contact</h2>
+<p>Namran Hussin (namran@namran.net)<br/>      </p>
+
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="http://github.com/namran/pnamran/zipball/master">zip</a> or
+      <a href="http://github.com/namran/pnamran/tarball/master">tar</a> formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/namran/pnamran</pre>
+    </p>
+      
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/namran/pnamran">namran/pnamran</a>
+    </div>
+    
+  </div>
+
+  <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6327660");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
